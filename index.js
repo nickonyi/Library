@@ -1,5 +1,8 @@
 const addBook = document.getElementById("submit");
 addBook.addEventListener("click", addBookToLibrary);
+const newBtn = document.getElementById("new-btn");
+const popUp = document.getElementById("pop-up");
+newBtn.addEventListener("click", () => { popUp.style.display = 'block'; });
 
 const myLibrary = [];
 
@@ -12,6 +15,7 @@ function Book(title, author, pages, read) {
 
 function addBookToLibrary() {
     event.preventDefault();
+    popUp.style.display = "none";
     const newBook = new Book(title, author, pages, read);
     myLibrary.push(newBook);
 
@@ -91,5 +95,4 @@ function createBook(book) {
         setBook();
         displayBooks();
     });
-
 }
