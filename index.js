@@ -3,6 +3,17 @@ addBook.addEventListener("click", addBookToLibrary);
 const newBtn = document.getElementById("new-btn");
 const popUp = document.getElementById("pop-up");
 newBtn.addEventListener("click", () => { popUp.style.display = 'block'; });
+const span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    popUp.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == popUp) {
+        popUp.style.display = "none";
+    }
+}
 
 const myLibrary = [];
 
@@ -72,7 +83,7 @@ function createBook(book) {
         readBtn.textContent = "Not read";
         readBtn.style.backgroundColor = '#e04f63';
     } else {
-        readBtn.textContent = "read";
+        readBtn.textContent = "Read";
         readBtn.style.backgroundColor = '#63da63';
     }
 
