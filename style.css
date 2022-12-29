@@ -182,6 +182,7 @@ footer {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 2px;
     font-size: 1.2rem;
+    position: relative;
 }
 
 .a-tag {
