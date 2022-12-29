@@ -173,3 +173,21 @@ button {
 .read-btn:hover {
     cursor: pointer;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-block: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+.a-tag {
+    transition: transform 1s;
+}
+
+.a-tag:hover {
+    transform: rotate(1080deg);
+}
