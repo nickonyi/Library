@@ -123,7 +123,6 @@ legend {
 
 #library-container {
     margin-top: 100px;
-    border-top: 4px solid violet;
     display: flex;
     flex-wrap: wrap;
     column-gap: 150px;
@@ -164,4 +163,13 @@ button {
 
 #remove-btn {
     background-color: rgb(138, 134, 134, .3);
+}
+
+#remove-btn:hover {
+    cursor: pointer;
+    background-color: rgb(138, 134, 134, .9);
+}
+
+.read-btn:hover {
+    cursor: pointer;
 }

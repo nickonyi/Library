@@ -15,7 +15,7 @@ window.onclick = function(event) {
     }
 }
 
-const myLibrary = [];
+let myLibrary = [];
 
 function Book(title, author, pages, read) {
     this.title = form.title.value;
@@ -107,3 +107,17 @@ function createBook(book) {
         displayBooks();
     });
 }
+
+//pulls book from local storage when refreshed
+function restore() {
+    if (!localStorage.myLibrary) {
+        displayBooks();
+    } else {
+        let objects = localStorage.getItem('myLibrary'); // gets information from local storage to use in below loop to create DOM/display
+        objects = JSON.parse(objects);
+        myLibrary = objects;
+        displayBooks();
+    }
+}
+
+restore();
