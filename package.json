@@ -18,6 +18,7 @@
   "homepage": "https://github.com/nickonyi/Library#readme",
   "devDependencies": {
     "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.11",
     "prettier": "2.8.1"
   }
