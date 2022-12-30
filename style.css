@@ -1,194 +1,194 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: rgb(175, 172, 172, .3);
+  background: rgb(175, 172, 172, 0.3);
 }
 
 #pop-up {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #888;
-    background-color: rgb(0, 0, 0, .4);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #888;
+  background-color: rgb(0, 0, 0, 0.4);
 }
 
 .book-lib {
-    width: 100%;
-    height: 20vh;
-    background-image: linear-gradient(to right, skyblue, darkblue);
-    display: flex;
-    align-items: center;
-    padding-left: 2rem;
+  width: 100%;
+  height: 20vh;
+  background-image: linear-gradient(to right, skyblue, darkblue);
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
 }
 
 .logo {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
-    color: red;
-    text-transform: uppercase;
-    text-shadow: 3px 3px yellow;
+  font-family: "Abril Fatface", cursive;
+  font-size: 3rem;
+  color: red;
+  text-transform: uppercase;
+  text-shadow: 3px 3px yellow;
 }
 
-form>p {
-    padding-block: 3px;
+form > p {
+  padding-block: 3px;
 }
 
 #new-btn-container {
-    position: absolute;
-    margin-top: 2rem;
-    left: 35rem;
+  position: absolute;
+  margin-top: 2rem;
+  left: 35rem;
 }
 
 #new-btn {
-    padding-inline: 3rem;
-    padding-block: 1rem;
-    border-radius: 10px;
-    box-shadow: 5px 5px red;
-    border: none;
-    background-image: linear-gradient(to right, skyblue, darkblue);
-    font-weight: 700;
-    color: yellow;
-    font-family: 'Abril Fatface', cursive;
-    letter-spacing: 2px;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px red;
+  border: none;
+  background-image: linear-gradient(to right, skyblue, darkblue);
+  font-weight: 700;
+  color: yellow;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 2px;
 }
 
 .close {
-    color: rgb(105, 101, 101);
-    position: absolute;
-    top: 170px;
-    left: 800px;
-    font-size: 28px;
-    font-weight: bold;
-    z-index: 2;
+  color: rgb(105, 101, 101);
+  position: absolute;
+  top: 170px;
+  left: 800px;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 2;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #form {
-    position: absolute;
-    top: 150px;
-    left: 550px;
-    background: #fff;
-    height: 400px;
-    width: 300px;
-    padding-inline: 40px;
-    font-family: 'Oswald', sans-serif;
-    color: rgb(141, 135, 135);
-    border-radius: 10px;
+  position: absolute;
+  top: 150px;
+  left: 550px;
+  background: #fff;
+  height: 400px;
+  width: 300px;
+  padding-inline: 40px;
+  font-family: "Oswald", sans-serif;
+  color: rgb(141, 135, 135);
+  border-radius: 10px;
 }
 
 legend {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: rgb(141, 135, 135);
-    margin-block: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(141, 135, 135);
+  margin-block: 20px;
 }
 
 .input-box {
-    width: 100%;
-    padding: 5px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 #read {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #submit {
-    width: 100%;
-    margin-top: 40px;
-    padding-block: 10px;
-    font-size: 1.35rem;
-    background-image: linear-gradient(to right, skyblue, darkblue);
-    border: none;
-    border-radius: 10px;
-    color: #fff;
+  width: 100%;
+  margin-top: 40px;
+  padding-block: 10px;
+  font-size: 1.35rem;
+  background-image: linear-gradient(to right, skyblue, darkblue);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
 }
 
 #library-container {
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 150px;
-    row-gap: 50px;
-    padding-inline: 50px;
-    padding-block: 50px;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 150px;
+  row-gap: 50px;
+  padding-inline: 50px;
+  padding-block: 50px;
 }
 
 .book {
-    width: 300px;
-    height: 330px;
-    display: flex;
-    flex-direction: column;
-    padding-inline: 40px;
-    font-family: 'Lobster', cursive;
-    font-size: 1.15rem;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0, .4);
+  width: 300px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 40px;
+  font-family: "Lobster", cursive;
+  font-size: 1.15rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
 }
 
 .book div {
-    margin-block: 10px;
-    padding-block: 10px;
-    text-align: center;
+  margin-block: 10px;
+  padding-block: 10px;
+  text-align: center;
 }
 
 .book button {
-    margin-block: 10px;
-    padding-block: 10px;
-    border-radius: 5px;
-    border: none;
+  margin-block: 10px;
+  padding-block: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 button {
-    display: block;
+  display: block;
 }
 
 #remove-btn {
-    background-color: rgb(138, 134, 134, .3);
+  background-color: rgb(138, 134, 134, 0.3);
 }
 
 #remove-btn:hover {
-    cursor: pointer;
-    background-color: rgb(138, 134, 134, .9);
+  cursor: pointer;
+  background-color: rgb(138, 134, 134, 0.9);
 }
 
 .read-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding-block: 30px;
-    font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.2rem;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-block: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  position: relative;
 }
 
 .a-tag {
-    transition: transform 1s;
+  transition: transform 1s;
 }
 
 .a-tag:hover {
-    transform: rotate(1080deg);
+  transform: rotate(1080deg);
 }
