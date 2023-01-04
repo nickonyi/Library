@@ -2,6 +2,7 @@ const addBook = document.getElementById("submit");
 addBook.addEventListener("click", addBookToLibrary);
 const newBtn = document.getElementById("new-btn");
 const popUp = document.getElementById("pop-up");
+const popUpCont = document.getElementById("pop-up-container");
 newBtn.addEventListener("click", () => {
     popUp.style.display = "block";
 });
@@ -13,6 +14,8 @@ span.onclick = function() {
 
 window.onclick = function(event) {
     if (event.target == popUp) {
+        popUp.style.display = "none";
+    } else if (event.target == popUpCont) {
         popUp.style.display = "none";
     }
 };
